@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 97vh;
+            color: white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-image: url('Images file/among us background image.jpg');
+            background-position: center;
+            background-size: 500px;
+            margin: 0px;
+            overflow: hidden;
+        }
+        button{
+            background: linear-gradient(to right, hsla(267, 78%, 70%, 0.777), hsl(257, 73%, 50%, 0.767));
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 200px;
+            height: 50px;
+            font-size:2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: ease-in-out 0.1s;
+            border: none;
+        }
+        button:hover{
+            box-shadow: 0px 0px 50px 7px hsla(267, 78%, 50%, 0.5);
+            transform: scale(1.01);
+            border: 1px solid white;
+        }
+        button:active{
+            background: linear-gradient(to right, hsla(267, 78%, 50%, 0.777), hsl(257, 73%, 30%, 0.767));
+            outline: 1px solid white;
+            box-shadow: 0px 0px 50px 7px hsla(267, 78%, 50%, 0);
+            transition: ease 0.1s;
+        }
+        #MainDiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        #OverlayDiv{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: hsl(162, 66%, 50%, 0.3);
+            z-index: -1;
+            filter: blur(77px);
+            animation: rotation 10s infinite ease-in-out;
+            animation-direction: alternate;
+            overflow: hidden;
+        }
+        #SecondOverlayDiv{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: hsl(167, 66%, 60%);
+            z-index: -1;
+            filter: blur(77px);
+            animation: rotation2 7s infinite linear;
+            overflow: hidden
+        }
+        @keyframes rotation{
+            0%{
+                transform: rotate(0deg) scaleX(4) scaleY(2);
+            }
+            100%{
+                transform: rotate(360deg) scaleX(2) scaleY(4);
+            }
+        }
+        @keyframes rotation2{
+            0%{
+                transform: rotate(0deg) scale(4);
+            }
+            100%{
+                transform: rotate(360deg) scale(4);
+            }
+        }
+        p{
+            font-size: 1.5em;
+            text-shadow: 1px 1px 7px black;
+        }
+        span{
+            text-shadow: 1px 1px 7px black;
+        }
+        h1{
+            text-shadow: 0px 0px 20px black;
+        }
+        footer{
+            position: fixed;
+            bottom: 7px;
+            right: 7px;
+        }
+        a{
+            text-decoration: none;
+        }
+        @media screen and (max-width: 777px) {
+            body{
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                height: 97vh;
+                width: 97vw;
+            }
+            footer{
+                font-size: 0.7em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="MainDiv">
+        <h1>Welcome!</h1>
+        <p>Explore the solar system: </p> <span> Click below to begin your journey through space! </span>  <br>
+        <a href="Main.html"><button>Start</button></a>
+        <div id="OverlayDiv"></div>
+        <div id="SecondOverlayDiv"></div>
+    </div>
+    <footer>
+        Created by Othman Harech.
+    </footer>
+</body>
+</html>

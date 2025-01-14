@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars</title>
+    <style>
+        body{
+            margin: 0;
+            background-image: url('Images file/181115180453-01-mars-best-moments-mars-globe-valles-marineris-enhanced (1).jpg');
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        header{
+            color: white;
+            font-size: 3em;
+            padding: 30px;
+            font-style: italic;
+        }
+        h3{
+            font-style: italic;
+            color: white;
+            padding: 10px;
+            padding-left: 2%;
+            text-decoration: underline;
+        }
+        #Background{
+            z-index: -1;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to bottom right, hsl(0, 0%, 0%), rgba(0, 0, 0, 0));
+        }
+        ul, ol{
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            padding-right: 7%;
+        }
+        span{
+            background-color: white;
+            color: black;
+            font-weight: 700;
+            padding-left: 5px;
+            padding-right: 1px;
+        }
+        p{
+            padding-left: 5px;
+            font-size: 1.3em;
+            margin-left: 1%;
+            margin-right: 7%;
+            color: white;
+            text-shadow: 1px 1px 7px black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #BButton{
+            background-color: hsl(0, 0%, 0%, 0.5);
+            border-radius: 7px;
+            padding: 7px;
+            padding-left: 1%;
+            padding-right: 1%;
+            text-decoration: none;
+            color: hsl(162, 66%, 17%);
+            transition: ease-in-out 0.1s;
+            border: 1px solid transparent;
+        }
+        #BButton:hover{
+            box-shadow: 0px 0px 50px 7px hsla(267, 78%, 50%, 0.5);
+            transform: scale(1.01);
+            border: 1px solid white;
+            background-color: hsl(0, 0%, 30%, 0.5);
+            color: hsl(162, 66%, 30%);
+        }
+        #BButton:active{
+            outline: 1px solid white;
+            box-shadow: 0px 0px 50px 7px hsla(267, 78%, 50%, 0);
+            transition: ease 0.1s;
+        }
+        #MImage{
+            float: left;
+            width: 300px;
+            margin-right: 3%;
+            border: 1px solid white;
+            box-shadow: 0px 0px 77px 7px hsla(267, 78%, 50%, 0.5);
+        }
+        #MImages{
+            display: block;
+            width: 50%;
+            box-shadow: 0px 0px 77px 7px black;
+        }
+        #Beyond{
+            color: white;
+            text-align: center;
+            padding: 10%;
+            font-size: 3em;
+            font-style: italic;
+            text-shadow: 1px 1px 30px black;
+            height: 77%;
+            border-top: 3px dashed white;
+            background: linear-gradient(to bottom, hsl(23, 33%, 15%), hsla(0, 0%, 0%, 0));
+        }
+        #MMoon{
+            color: hsl(53, 11%, 30%);
+        }
+        #MMoon2{
+            color: hsl(40, 4%, 30%);
+        }
+    </style>
+</head>
+<body>
+    <div id="Background"></div>
+    <header>
+        <a href="Main.html" id="BButton"><</a>
+        Mars</header>
+    <ul>
+        <li> <span>Type:</span> Planet</li> <br>
+        <li><span>Orbit Distance:</span> 227.9 million km (1.52 AU from the Sun)</li><br>
+        <li><span>Diameter:</span> 6,779 km</li><br>
+        <li><span>Day Length:</span> 24.6 hours (similar to Earth's day length)</li><br>
+        <li><span>Year Length:</span> 687 Earth days</li><br>
+        <li><span>Moons:</span> 2 (<a href="Phobos.html" id="MMoon">Phobos</a> and <a href="Deimos.html" id="MMoon2">Deimos</a>)</li><br>
+        <li><span>Temperature:</span> Average temperature is about -60°C (-80°F), but it can range from -125°C (-195°F) at the poles during winter to up to 20°C (68°F) near the equator during the day.</li> <br>
+    </ul>
+    <h3>Description:</h3>
+    <p>Mars, often referred to as the "Red Planet," is the fourth planet from the Sun in our solar system. It has a thin atmosphere primarily made of carbon dioxide, with traces of nitrogen and argon. The planet's reddish appearance is due to iron oxide, or rust, on its surface. Mars is home to the largest volcano in the solar system, Olympus Mons, and the deepest canyon, Valles Marineris. Its surface is diverse, with vast plains, impact craters, and frozen water at its polar caps. With two small moons, Phobos and Deimos, Mars has intrigued scientists as a potential site for future human exploration and colonization, due to its similarity to Earth in certain aspects, such as day length and the presence of water in its past. Despite its thin atmosphere, Mars experiences extreme temperature variations, making it a challenging environment for life.</p>
+    <h3>Unique Features and Fun Facts:</h3>
+    <ol>
+        <li><span>Olympus Mons:</span>  <br> <br> <img src="Images file/1707px-Olympus_Mons_-_ESA_Mars_Express_-_Flickr_-_Andrea_Luck.png" alt="" id="MImages">Mars is home to the largest volcano in the solar system, Olympus Mons, which is about 13.6 miles (22 km) high—nearly three times the height of Mount Everest.</li> <br>
+        <li><span>Valles Marineris:</span>  This massive canyon system stretches over 2,500 miles (4,000 km) long and reaches depths of up to 7 miles (11 km), making it much larger and deeper than Earth's Grand Canyon.</li> <br>
+        <li><span>Seasonal Changes:</span> Mars has seasons similar to Earth’s due to its tilted axis, but they are about twice as long because a year on Mars is nearly twice as long as an Earth year.</li> <br>
+        <li><span>Dust Storms:</span> Mars is known for its planet-wide dust storms that can last for months and cover the entire planet, reducing visibility and affecting the temperature.</li> <br>
+        <li><span>Frozen Water:</span> Mars has large amounts of water in the form of ice, primarily located at its polar caps. There is evidence suggesting that liquid water may have once flowed on its surface.</li> <br>
+        <li><span>Extreme Temperature Variations:</span> Mars experiences significant temperature swings, from a daytime high of around 70°F (20°C) to nighttime lows of -195°F (-125°C) near the poles.</li><br>
+        <li><span>Mars' Red Soil:</span>  <br> <br> <img src="Images file/PIA17944-MarsCuriosityRover-AfterCrossingDingoGapSanddune-20140209.jpg" alt="" id="MImages">The planet's surface appears red due to the presence of iron oxide (rust), which gives the planet its distinctive reddish hue visible even from Earth.</li><br>
+    </ol>
+    <h3>Exploration and Missions:</h3>
+    <ul>
+        <li><span>First Ever Mars Mission – Mariner 4 (1964):</span>
+        <p> <img src="Images file/01_red_planet_square.avif" alt="" id="MImage"> The first successful mission to Mars was NASA's Mariner 4, launched in November 1964. It made the first successful flyby of Mars in July 1965, sending back 22 grainy black-and-white images of the Martian surface. These images showed the planet's surface as cratered and barren, challenging previous ideas of a more Earth-like world.</p>
+        </li> <br> <br><br> <br><br><br><br> <br> <br>
+        <li><span>Successful Landing – InSight Lander (2018):</span>
+        <p> <img src="Images file/1-PIA23764-RoverNamePlateonMars.avif" alt="" id="MImage"> NASA's InSight mission, launched in May 2018, landed on Mars in November 2018. Unlike other missions focused on exploration of the surface, InSight's main objective was to study the interior of Mars. It measures seismic activity (marsquakes), heat flow, and other key data to understand the planet's structure and its geologic history.</p>
+        </li> <br> <br><br> <br><br><br><br> <br> <br>
+        <li><span>Recent Mars Mission – Perseverance Rover (2020):</span>
+        <p> <img src="Images file/1542813926978.webp" alt="" id="MImage"> NASA's Perseverance rover, part of the Mars 2020 mission, landed on Mars in February 2021. Its main goals include searching for signs of ancient life, collecting rock samples for potential return to Earth, and testing technologies for future human exploration. Perseverance also carries the Ingenuity helicopter, which made history by performing the first controlled flight on another planet.</p>
+        </li><br> <br><br> <br><br><br><br>
+    </ul>
+    <div id="Beyond">Fun Fact!
+        <h6>Mars has the largest dust storms in the solar system. These storms can cover the entire planet and last for months, sometimes even altering the global weather patterns. Despite the thin atmosphere, the dust particles can travel high into the atmosphere and block sunlight, affecting the planet's temperature. These storms are one of the many challenges future missions to Mars may need to navigate!</h6>
+    </div>
+</body>
+</html>

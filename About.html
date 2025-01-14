@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body{
+            height: 97vh;
+            color: white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-image: url('Images file/among us background image.jpg');
+            background-position: center;
+            background-attachment: fixed;
+            background-size: 500px;
+            margin: 0px;
+        }
+        header{
+            font-size: 2.5em;
+            padding: 30px;
+            font-style: italic;
+            border-bottom: 1px solid white;
+        }
+        div{
+            z-index: -1;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to bottom right, hsl(162, 66%, 17%, 0.4), rgba(0, 0, 0, 0));
+        }
+        main{
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 50px;
+            padding-right: 7%;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5em;
+        }
+        h1{
+            text-decoration: underline;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #BButton{
+            background-color: hsl(0, 0%, 0%, 0.5);
+            border-radius: 7px;
+            padding: 7px;
+            padding-left: 1%;
+            padding-right: 1%;
+            text-decoration: none;
+            color: hsl(162, 66%, 17%);
+            transition: ease-in-out 0.1s;
+            border: 1px solid transparent;
+        }
+        #BButton:hover{
+            box-shadow: 0px 0px 50px 7px hsla(267, 78%, 50%, 0.5);
+            transform: scale(1.01);
+            border: 1px solid white;
+            background-color: hsl(0, 0%, 30%, 0.5);
+            color: hsl(162, 66%, 30%);
+        }
+        #BButton:active{
+            outline: 1px solid white;
+            box-shadow: 0px 0px 50px 7px hsla(267, 78%, 50%, 0);
+            transition: ease 0.1s;
+        }
+        #Insta{
+            color: hsl(267, 78%, 50%);
+        }
+        article{
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+        }
+        </style>
+</head>
+<body>
+    <div></div>
+    <header>
+        <a href="Main.html" id="BButton"><</a>
+        About Solar System Explorer
+    </header>
+    <main>
+        <h1>Purpose of the Website:</h1>
+        <p>This website is dedicated to exploring and learning about the fascinating components of our solar system, from planets to distant dwarf planets and beyond.</p>
+        <h1>Key Features:</h1>
+        <p>
+            <ul>
+                <li>Explore the planets and different components of the solar system.</li> <br>
+                <li>Learn about the Sun, asteroids, and moons.</li><br>
+                <li>Discover fun facts and unique features of each celestial body.</li> <br>
+            </ul>
+        </p>
+        <h1>Creator Information:</h1>
+        <p>
+            This website was created by me "Othman Harech - AKA <a href="https://www.instagram.com/ender.wigin7777" id="Insta">Ender Wigin</a>" as a school project after our teacher encouraged us to make something small and meaningful. Since I’ve always been fascinated by space, I decided to create a website that allows users to explore the various components of our solar system. My goal was to make learning about planets, moons, and other celestial bodies fun and engaging for everyone!
+        </p>
+    </main>
+</body>
+</html>

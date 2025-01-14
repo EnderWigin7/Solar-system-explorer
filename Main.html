@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <title>Main</title>
+    <style>
+        body{
+            height: 97vh;
+            color: white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-image: url('Images file/among us background image.jpg');
+            background-position: center;
+            background-size: 500px;
+            margin: 0px;
+            background-attachment: fixed;
+        }
+        header{
+            gap: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 77px;
+            top: 0px;
+            width: 100%;
+            border-bottom: 1px solid white;
+            background: linear-gradient(to top, hsl(162, 66%, 17%, 0.9), hsla(247, 52%, 10%, 0.8));
+        }
+        h2{
+            flex-grow: 77;
+            text-align: center;
+        }
+        .button{
+            position: relative;
+            height: 50px;
+            width: 100px;
+            background-color: hsl(0, 0%, 0%, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s ease-in-out;
+            border: 1px solid gray;
+            border-radius: 7px;
+            cursor: pointer;
+            margin-right: 3%;
+        }
+        #ODiv{
+            visibility: hidden;
+            transform: scale(0.9);
+            position: fixed;
+            top: 10%; 
+            right: 7%; 
+            background-color: rgba(177, 177, 177, 0.777);
+            color: white;
+            padding: 10px;
+            border-radius: 7px;
+            z-index: 1000;
+            color: black;
+            opacity: 0;
+            border: 3px solid black;
+            box-shadow: 0px 0px 0px 0px black;
+            transition: visibility 0.1s ease-in-out 0.1s, opacity 0.1s ease-in-out 0.1s, transform 0.1s ease-in-out 0.1s, box-shadow 0.3s ease-in-out 0.1s;
+        }
+        .button:hover + #ODiv {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+            box-shadow: 0px 0px 77px 7px black;
+        }
+        .button:hover{
+            background-color: hsl(7, 0%, 7%, 0.7);
+            outline: 1px solid rgb(255, 255, 255);
+            text-decoration: underline;
+        }   
+        header > div{
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        #TSun{
+            display: block;
+            border: 1px solid white;
+            height: 100px;
+            margin: 0px;
+            align-content: center;
+            padding-left: 30px;
+            background: linear-gradient(to right, hsla(15, 94%, 20%, 0.7), rgba(0, 0, 0, 0.07));
+        }
+        p{
+            margin: 0;
+        }
+        #SunContainer{
+            background-color: hsla(0, 0%, 1%, 0.7);
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+        }
+        #SunContainer > div{
+            flex-shrink: 0;
+        }
+        .card-title{
+            border-bottom: 3px solid white;
+            padding: 3px;
+        }
+        #Description{
+            text-decoration: none;
+            background: linear-gradient(to right, hsla(267, 78%, 70%, 0.777), hsl(257, 73%, 50%, 0.767));
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 100px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: ease-in-out 0.1s;
+        }
+        #Description:hover{
+            box-shadow: 0px 0px 50px 7px hsla(267, 78%, 50%, 0.5);
+            transform: scale(1.01);
+            border: 1px solid white;
+        }
+        #Description:active{
+            background: linear-gradient(to right, hsla(267, 78%, 50%, 0.777), hsl(257, 73%, 30%, 0.767));
+            outline: 1px solid white;
+            box-shadow: 0px 0px 50px 7px hsla(267, 78%, 50%, 0);
+            transition: ease 0.1s;
+        }
+        header > div{
+            gap: 10px;
+            justify-content: space-around;
+        }
+        #Beyond{
+            text-align: center;
+            padding: 10%;
+            font-size: 3em;
+            font-style: italic;
+            text-shadow: 1px 1px 30px black;
+            height: 77%;
+            border-top: 3px dashed white;
+            background: linear-gradient(to bottom, hsl(162, 66%, 17%, 0.9), hsla(0, 0%, 0%, 0));
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <h2>Solar System Explorer</h2>
+            <div>
+                <a href="About.HTML" class="button">About</a>
+                <div class="button">Credits</div>
+                <div id="ODiv">
+                    Made by Othman Harech as a school project. <br>
+                    14 days of work.
+                </div>
+            </div>
+    </header>
+    <h1 id="TSun">Sol</h1>
+    <div id="SunContainer" >
+        <div class="card text-bg-dark" style="max-width: 18rem; border: 3px solid hsl(15, 94%, 20%);">
+            <img src="Images file/GSFC_20171208_Archive_e001435~large.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="color: hsla(15, 94%, 50%);">The sun</h5>
+                <p class="card-text">A massive, glowing ball of hot plasma at the center of our solar system, providing light and energy to sustain life on Earth.</p> <br>
+                <a href="The Sun.html" id="Description">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <h1 id="TSun" style="background: linear-gradient(to right, hsl(30, 28%, 15%, 0.7), rgba(0, 0, 0, 0.07));">Inner Planets</h1>
+    <div id="SunContainer">
+        <div class="card text-bg-dark" style="max-width: 18rem; border: 3px solid hsl(0, 1%, 29%);">
+            <img src="Images file/Mercury_in_true_color.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="color: hsl(0, 1%, 70%);">Mercury</h5>
+                <p class="card-text">The smallest and closest planet to the Sun, known for its extreme temperatures and cratered surface.</p> <br>
+                <a href="Mercury.html" id="Description">Learn more</a>
+            </div>
+        </div>
+        <div class="card text-bg-dark" style="max-width: 18rem; border: 3px solid hsl(37, 27%, 22%);">
+            <img src="Images file/09911-feature3-venus.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="color: hsl(37, 27%, 50%)">Venus</h5>
+                <p class="card-text">Shrouded in thick clouds of sulfuric acid and known as Earth's "sister planet" due to its similar size and composition.</p> <br>
+                <a href="Venus.html" id="Description">Learn more</a>
+            </div>
+        </div>
+        <div class="card text-bg-dark" style="max-width: 18rem; border: 3px solid hsl(238, 50%, 70%);">
+            <img src="Images file/The_Earth_seen_from_Apollo_17.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="color: rgb(172, 174, 237)">Earth</h5>
+                <p class="card-text" >Earth is the third planet from the Sun, uniquely known for harboring life, with vast oceans, diverse ecosystems, and a protective atmosphere.</p> <br>
+                <a href="Earth.html" id="Description">Learn more</a>
+            </div>
+        </div>
+        <div class="card text-bg-dark" style="max-width: 18rem; border: 3px solid hsl(23, 33%, 15%);">
+            <img src="Images file/181115180453-01-mars-best-moments-mars-globe-valles-marineris-enhanced.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="color: hsl(23, 33%, 30%)">Mars</h5>
+                <p class="card-text" >A rocky world with a thin atmosphere, home to the tallest volcano and largest canyon in the solar system.</p> <br>
+                <a href="Mars.html" id="Description">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <h1 id="TSun" style="background: linear-gradient(to right, hsl(330, 4%, 10%), rgba(0, 0, 0, 0.07));">The main asteroid belt</h1>
+    <div id="SunContainer">
+        <div class="card text-bg-dark" style="max-width: 18rem; border: 3px solid hsl(330, 4%, 10%);">
+            <img src="Images file/istockphoto-182090715-612x612.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="color: hsl(330, 4%, 50%);">The asteroid belt</h5>
+                <p class="card-text">A vast region between Mars and Jupiter filled with rocky debris and minor planets, remnants from the early solar system.</p> <br>
+                <a href="The asteroid belt.html" id="Description">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <h1 id="TSun" style="background: linear-gradient(to right, hsl(30, 4%, 10%), rgba(0, 0, 0, 0.07));">Outer planets</h1>
+    <div id="SunContainer">
+        <div class="card text-bg-dark" style="max-width: 18rem; border: 3px solid hsl(39, 8%, 35%);">
+            <img src="Images file/Jupiter_and_its_shrunken_Great_Red_Spot.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="color: hsl(39, 8%, 35%);">Jupiter</h5>
+                <p class="card-text">The largest planet in our solar system, known for its giant storms, including the Great Red Spot, and its many moons.</p> <br>
+                <a href="Jupiter.html" id="Description">Learn more</a>
+            </div>
+        </div>
+        <div class="card text-bg-dark" style="max-width: 18rem; border: 3px solid hsl(0, 0%, 12%);">
+            <img src="Images file/STScI-01F4V1YSADTFN411NJEKPGX90K.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="color: hsl(0, 0%, 40%)">Saturn</h5>
+                <p class="card-text">The sixth planet from the Sun, is a gas giant renowned for its stunning ring system composed of ice and rock.</p> <br>
+                <a href="Saturn.html" id="Description">Learn more</a>
+            </div>
+        </div>
+        <div class="card text-bg-dark" style="max-width: 18rem; border: 3px solid hsl(187, 6%, 30%);">
+            <img src="Images file/IMG_25YT_Q4_Uranus__2__2_1_K89JNTSR.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="color: hsl(187, 6%, 50%)">Uranus</h5>
+                <p class="card-text">An ice giant with a pale blue-green hue, known for its tilted axis that causes it to rotate on its side.</p> <br>
+                <a href="Uranus.html" id="Description">Learn more</a>
+            </div>
+        </div>
+        <div class="card text-bg-dark" style="max-width: 18rem; border: 3px solid hsl(194, 11%, 37%);">
+            <img src="Images file/Neptune_Voyager2_color_calibrated.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="color: hsl(194, 11%, 37%)">Neptune</h5>
+                <p class="card-text">The eighth and farthest planet from the Sun, known for its stunning blue color, powerful winds, and icy atmosphere.</p> <br>
+                <a href="Neptune.html" id="Description">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <h1 id="TSun" style="background: linear-gradient(to right, hsl(12, 5%, 18%), rgba(0, 0, 0, 0.07));">Dwarf planets</h1>
+    <div id="SunContainer">
+        <div class="card text-bg-dark" style="max-width: 18rem; border: 3px solid hsl(34, 8%, 34%)">
+            <img src="Images file/Pluto_in_True_Color_-_High-Res.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="color: hsl(34, 8%, 34%)">Pluto</h5>
+                <p class="card-text">A dwarf planet in the Kuiper Belt, known for its icy surface, small size.</p> <br>
+                <a href="Pluto.html" id="Description">Learn more</a>
+            </div>
+        </div>
+        <div class="card text-bg-dark" style="max-width: 18rem; border: 3px solid hsl(214, 3%, 48%);">
+            <img src="Images file/eris-makemake-icy-dwarf-planet-65d919391d7c7 (1).avif" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="color: hsl(214, 3%, 48%)">Eris</h5>
+                <p class="card-text">A dwarf planet located in the Kuiper Belt, known for being slightly smaller than Pluto and one of the most massive dwarf planets in our solar system.</p> <br>
+                <a href="Eris.html" id="Description">Learn more</a>
+            </div>
+        </div>
+        <div class="card text-bg-dark" style="max-width: 18rem; border: 3px solid hsl(0, 5%, 7%);">
+            <img src="Images file/DWARF-PLANET-HAUMEA-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="color: hsl(0, 5%, 50%);">Haumea</h5>
+                <p class="card-text">A dwarf planet located in the Kuiper Belt, known for its elongated shape due to rapid rotation.</p> <br>
+                <a href="Haumea.html" id="Description">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <h1 id="TSun" style="background: linear-gradient(to right, hsl(207, 13%, 17%), rgba(0, 0, 0, 0.07));">The icy frontier</h1>
+    <div id="SunContainer" >
+        <div class="card text-bg-dark" style="max-width: 18rem; border: 3px solid hsl(207, 13%, 17%);">
+            <img src="Images file/kuiper-belt.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="color: hsl(207, 13%, 50%);">The kuiper belt</h5>
+                <p class="card-text">A vast region of icy bodies and dwarf planets beyond Neptune, extending from about 30 to 55 AU from the Sun.</p> <br>
+                <a href="The kuiper belt.html" id="Description">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <div id="Beyond">Beyond the Solar system...</div>
+</body>
+</html>

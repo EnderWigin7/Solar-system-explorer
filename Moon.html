@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon</title>
+    <style>
+        body{
+            margin: 0;
+            background-image: url('Images file/PIA00404~large.jpg');
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        header{
+            color: white;
+            font-size: 3em;
+            padding: 30px;
+            font-style: italic;
+        }
+        h3{
+            font-style: italic;
+            color: white;
+            padding: 10px;
+            padding-left: 2%;
+            text-decoration: underline;
+        }
+        #Background{
+            z-index: -1;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to bottom right, hsl(0, 0%, 0%), rgba(0, 0, 0, 0));
+        }
+        ul, ol{
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            padding-right: 7%;
+        }
+        span{
+            background-color: white;
+            color: black;
+            font-weight: 700;
+            padding-left: 5px;
+            padding-right: 1px;
+        }
+        p{
+            padding-left: 5px;
+            font-size: 1.3em;
+            margin-left: 1%;
+            margin-right: 7%;
+            color: white;
+            text-shadow: 1px 1px 7px black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #BButton{
+            background-color: hsl(0, 0%, 0%, 0.5);
+            border-radius: 7px;
+            padding: 7px;
+            padding-left: 1%;
+            padding-right: 1%;
+            text-decoration: none;
+            color: hsl(162, 66%, 17%);
+            transition: ease-in-out 0.1s;
+            border: 1px solid transparent;
+        }
+        #BButton:hover{
+            box-shadow: 0px 0px 50px 7px hsla(267, 78%, 50%, 0.5);
+            transform: scale(1.01);
+            border: 1px solid white;
+            background-color: hsl(0, 0%, 30%, 0.5);
+            color: hsl(162, 66%, 30%);
+        }
+        #BButton:active{
+            outline: 1px solid white;
+            box-shadow: 0px 0px 50px 7px hsla(267, 78%, 50%, 0);
+            transition: ease 0.1s;
+        }
+        #MImage{
+            float: left;
+            width: 300px;
+            margin-right: 3%;
+            border: 1px solid white;
+            box-shadow: 0px 0px 77px 7px hsla(267, 78%, 50%, 0.5);
+        }
+        #MImages{
+            display: block;
+            width: 50%;
+            box-shadow: 0px 0px 77px 7px black;
+        }
+        #Beyond{
+            color: white;
+            text-align: center;
+            padding: 10%;
+            font-size: 3em;
+            font-style: italic;
+            text-shadow: 1px 1px 30px black;
+            height: 77%;
+            border-top: 3px dashed white;
+            background: linear-gradient(to bottom, hsl(0, 0%, 22%), hsla(0, 0%, 0%, 0));
+        }
+        #Moon{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="Background"></div>
+    <header>
+        <a href="Earth.html" id="BButton"><</a>
+        Moon</header>
+    <ul>
+        <li> <span>Type:</span> Moon</li> <br>
+        <li><span>Orbit Distance:</span> 384,400 km (from Earth)</li><br>
+        <li><span>Diameter:</span> 3,474.8 km</li><br>
+        <li><span>Day Length:</span> 27.3 Earth days (sidereal day)</li><br>
+        <li><span>Year Length:</span> 27.3 Earth days (the Moon's orbit around Earth)</li><br>
+        <li><span>Moons:</span> None (it is Earth's only moon)</li><br>
+        <li><span>Temperature:</span> Ranges from about -173°C at night to 127°C during the day</li> <br>
+    </ul>
+    <h3>Description:</h3>
+    <p>The Moon is Earth's only natural satellite and is the fifth-largest moon in our solar system. With a diameter of 3,474.8 kilometers, it has about one-quarter the size of Earth. The Moon's surface is characterized by vast plains of basaltic rock, known as maria, along with craters, mountains, and valleys. These features are the result of intense meteorite impacts over billions of years. The Moon has a weak atmosphere, known as an exosphere, which is nearly a vacuum. It has no liquid water on its surface, but there is evidence of water ice in permanently shadowed craters at the poles. The Moon's gravitational influence on Earth is responsible for tides and plays a significant role in stabilizing Earth's axial tilt. A lunar day lasts 27.3 Earth days, with temperatures fluctuating dramatically between extreme heat and cold. The Moon’s synchronous rotation causes the same side to always face Earth.</p>
+    <h3>Unique Features and Fun Facts:</h3>
+    <ol>
+        <li><span>Lunar Maria:</span>  <br> <br> <img src="Images file/Moon_names.svg" alt="" id="MImages">The large, dark plains on the Moon's surface, called maria, were formed by ancient volcanic activity and are rich in iron and magnesium.</li> <br>
+        <li><span>Water Ice:</span>  <br> <br> <img src="Images file/Chandrayaan1_Spacecraft_Discovery_Moon_Water.jpg" alt="" id="MImages">Water ice has been discovered in permanently shadowed craters near the Moon's poles, offering potential resources for future lunar missions.</li> <br>
+        <li><span>Tidal Locking:</span> The Moon is tidally locked to Earth, meaning it rotates on its axis once for every orbit around Earth, always showing us the same face.</li> <br>
+        <li><span>The Moon’s Influence on Earth:</span> The Moon stabilizes Earth’s axial tilt, contributing to a more stable climate.</li> <br>
+        <li><span>Low Gravity:</span> The Moon’s gravity is about 1/6th that of Earth's, meaning you could jump six times higher on the Moon than on Earth.</li> <br>
+        <li><span>Lunar Eclipses:</span> A lunar eclipse occurs when Earth’s shadow completely or partially covers the Moon, creating a beautiful reddish hue, known as a "blood moon."</li><br>
+        <li><span>No Atmosphere:</span> The Moon has no significant atmosphere, which means there’s no weather, no wind, and the sky is always black, even during the day.</li><br>
+    </ol>
+    <h3>Exploration and Missions:</h3>
+    <ul>
+        <li><span>Luna 1 (1959):</span>
+        <p> <img src="Images file/luna-1_732.webp" alt="" id="MImage"> Launched by the Soviet Union, Luna 1 was the first human-made object to reach the Moon's vicinity. Although it missed a direct impact, it passed within 5,995 kilometers of the lunar surface, marking humanity's initial foray into lunar exploration.</p>
+        </li> <br> <br><br> <br><br><br><br> <br> <br> <br> <br>
+        <li><span>Chandrayaan-2 (2019):</span>
+        <p> <img src="Images file/Untitled_design_(44)1566493122177.avif" alt="" id="MImage"> India's Chandrayaan-2 mission aimed to explore the Moon's south pole region. While the orbiter successfully entered lunar orbit and continues to send data, the lander, Vikram, lost communication during its descent and did not achieve a soft landing.</p>
+        </li> <br> <br><br> <br><br><br><br> <br> <br>
+        <li><span>Intuitive Machines' IM-1 Mission (2024):</span>
+        <p> <img src="Images file/01-10-2024_IM_1_NOVA_C_Lunar_Lander_A.jpg" alt="" id="MImage"> In April 2024, Intuitive Machines became the first private company to achieve a successful lunar landing with its IM-1 mission. The lander delivered payloads to the Moon's surface, marking a significant milestone in commercial lunar exploration. </p>
+        </li><br> <br><br> <br><br><br><br>
+    </ul>
+    <div id="Beyond">Fun Fact!
+        <h6>The Moon is slowly drifting away from Earth! Each year, it moves about 3.8 centimeters farther from our planet. While this might seem small, over millions of years, it has a significant effect on Earth's rotation, gradually lengthening our days.</h6>
+    </div>
+</body>
+</html>

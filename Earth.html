@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth</title>
+    <style>
+        body{
+            margin: 0;
+            background-image: url('Images file/nasa-yZygONrUBe8-unsplash.jpg');
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        header{
+            color: white;
+            font-size: 3em;
+            padding: 30px;
+            font-style: italic;
+        }
+        h3{
+            font-style: italic;
+            color: white;
+            padding: 10px;
+            padding-left: 2%;
+            text-decoration: underline;
+        }
+        #Background{
+            z-index: -1;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to bottom right, hsl(0, 0%, 0%), rgba(0, 0, 0, 0));
+        }
+        ul, ol{
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            padding-right: 7%;
+        }
+        span{
+            background-color: white;
+            color: black;
+            font-weight: 700;
+            padding-left: 5px;
+            padding-right: 1px;
+        }
+        p{
+            padding-left: 5px;
+            font-size: 1.3em;
+            margin-left: 1%;
+            margin-right: 7%;
+            color: white;
+            text-shadow: 1px 1px 7px black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #BButton{
+            background-color: hsl(0, 0%, 0%, 0.5);
+            border-radius: 7px;
+            padding: 7px;
+            padding-left: 1%;
+            padding-right: 1%;
+            text-decoration: none;
+            color: hsl(162, 66%, 17%);
+            transition: ease-in-out 0.1s;
+            border: 1px solid transparent;
+        }
+        #BButton:hover{
+            box-shadow: 0px 0px 50px 7px hsla(267, 78%, 50%, 0.5);
+            transform: scale(1.01);
+            border: 1px solid white;
+            background-color: hsl(0, 0%, 30%, 0.5);
+            color: hsl(162, 66%, 30%);
+        }
+        #BButton:active{
+            outline: 1px solid white;
+            box-shadow: 0px 0px 50px 7px hsla(267, 78%, 50%, 0);
+            transition: ease 0.1s;
+        }
+        #MImage{
+            float: left;
+            width: 300px;
+            margin-right: 3%;
+            border: 1px solid white;
+            box-shadow: 0px 0px 77px 7px hsla(267, 78%, 50%, 0.5);
+        }
+        #MImages{
+            display: block;
+            width: 50%;
+            box-shadow: 0px 0px 77px 7px black;
+        }
+        #Beyond{
+            color: white;
+            text-align: center;
+            padding: 10%;
+            font-size: 3em;
+            font-style: italic;
+            text-shadow: 1px 1px 30px black;
+            height: 77%;
+            border-top: 3px dashed white;
+            background: linear-gradient(to bottom, hsl(207, 50%, 30%), hsla(0, 0%, 0%, 0));
+        }
+        #Moon{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="Background"></div>
+    <header>
+        <a href="Main.html" id="BButton"><</a>
+        Earth</header>
+    <ul>
+        <li> <span>Type:</span> Planet</li> <br>
+        <li><span>Orbit Distance:</span>149.6 million kilometers (1 AU)</li><br>
+        <li><span>Diameter:</span> 12,742 kilometers</li><br>
+        <li><span>Day Length:</span> 24 hours and 0.002 seconds</li><br>
+        <li><span>Year Length:</span> 365.25 days</li><br>
+        <li><span>Moons:</span> 1 (<a href="Moon.html" id="Moon">the Moon</a>).</li><br>
+        <li><span>Temperature:</span> Average temperature is approximately 14°C (57°F)</li> <br>
+    </ul>
+    <h3>Description:</h3>
+    <p>
+        
+Earth is the third planet from the Sun, orbiting at an average distance of 149.6 million kilometers. It is the only known planet to support life, with a diverse range of ecosystems, from vast oceans to towering mountains and expansive forests. Earth has a variety of climates, influenced by its axial tilt and rotation, which result in distinct seasons across different regions. The planet's atmosphere is composed primarily of nitrogen and oxygen, providing breathable air and protecting life from harmful solar radiation. Earth's surface is covered by both land and water, with oceans making up about 71% of the surface. The planet’s gravity and magnetic field make it conducive to sustaining life. Earth’s moon, the Moon, plays a crucial role in stabilizing its axis and influencing tides. It is constantly evolving, with ongoing geological processes such as plate tectonics, erosion, and volcanic activity shaping the surface. Earth is home to a wide array of flora and fauna, contributing to a complex and interdependent biosphere.</p>
+    <h3>Unique Features and Fun Facts:</h3>
+    <ol>
+        <li><span>Earth’s diverse ecosystems:</span> Earth is home to a wide variety of ecosystems, from tropical rainforests to deserts and polar ice caps, each supporting unique life forms.</li> <br>
+        <li><span>The Moon's effect:</span>  Earth's moon helps stabilize the planet’s axial tilt, creating the stable climate conditions necessary for life.</li> <br>
+        <li><span>Earth’s atmosphere:</span> Earth's atmosphere, composed of 78% nitrogen and 21% oxygen, provides the perfect balance of gases to sustain life.</li> <br>
+        <li><span>A living planet:</span> Earth is home to an incredibly diverse range of life forms, from microscopic bacteria to large mammals.</li> <br>
+        <li><span>Tectonic plates:</span> <br> <br> <img src="Images file/Tectonic_plates_(empty).svg" alt="" id="MImages"> Earth’s surface is constantly reshaped by tectonic plates, which move and interact, causing earthquakes, mountains, and volcanoes.</li> <br>
+        <li><span>Magnetic field:</span> <br> <br> <img src="Images file/Magnetosphere_Levels-en.svg" alt="" id="MImages"> Earth’s magnetic field protects us from solar wind and cosmic radiation, making life possible on the surface.</li><br>
+        <li><span>Unique rotation:</span> Unlike most planets, Earth has a nearly perfect spherical shape and rotates on its axis in just under 24 hours, giving us the cycle of day and night.</li><br>
+    </ol>
+    <h3>Exploration and Missions:</h3>
+    <ul>
+        <li><span>First-Ever Mission: Sputnik 1 (1957):</span>
+        <p> <img src="Images file/Первый_в_мире_искусственный_спутник_Земли.jpg" alt="" id="MImage"> Sputnik 1 was the first artificial satellite to orbit the Earth, marking the beginning of human space exploration. Launched by the Soviet Union on October 4, 1957, it orbited Earth for 21 days before its batteries ran out.</p>
+        </li> <br> <br><br> <br><br><br><br> <br> <br>
+        <li><span>Earth Observation Satellite "Sentinel-6" (2020):</span>
+        <p> <img src="Images file/sentinel-6-art-16.jpg" alt="" id="MImage"> Sentinel-6 is a collaboration between NASA, the European Space Agency (ESA), and the European Organization for the Exploitation of Meteorological Satellites (EUMETSAT). Launched on November 21, 2020, Sentinel-6 aims to measure sea-level rise caused by climate change and gather precise Earth data to improve weather forecasts.</p>
+        </li> <br> <br><br> <br><br><br><br> <br> <br>
+        <li><span>Falcon 9 Launch for Starlink (January 11, 2025):</span>
+        <p> <img src="Images file/N13_SPACEX_LAUNCH_010825.jpg" alt="" id="MImage"> SpaceX's most recent mission on January 11, 2025, involved launching 60 Starlink satellites into low Earth orbit aboard a Falcon 9 rocket from Cape Canaveral, Florida. This mission continues SpaceX’s efforts to expand the Starlink network, providing global high-speed internet coverage, particularly to remote areas. The successful deployment of these satellites is a part of SpaceX's broader goal of improving internet access worldwide.</p>
+        </li><br> <br><br> <br><br><br><br>
+    </ul>
+    <div id="Beyond">Fun Fact!
+        <h6>Earth’s core is as hot as the surface of the Sun, with temperatures reaching up to 5,500°C (9,932°F). Despite being incredibly hot, the core remains solid due to the immense pressure from the layers above it. This heat plays a key role in generating Earth's magnetic field, which protects us from harmful solar radiation.</h6>
+    </div>
+</body>
+</html>
