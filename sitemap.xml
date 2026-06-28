@@ -4,10 +4,13 @@
     <loc>https://enderwigin7.github.io/Solar-system-explorer/</loc>
   </url>
   <url>
-    <loc>https://enderwigin7.github.io/Solar-system-explorer/About.html</loc>
+    <loc>https://enderwigin7.github.io/Solar-system-explorer/about.html</loc>
   </url>
   <url>
     <loc>https://enderwigin7.github.io/Solar-system-explorer/Mercury.html</loc>
+  </url>
+  <url>
+    <loc>https://enderwigin7.github.io/Solar-system-explorer/Venus.html</loc>
   </url>
   <url>
     <loc>https://enderwigin7.github.io/Solar-system-explorer/Earth.html</loc>
@@ -22,12 +25,39 @@
     <loc>https://enderwigin7.github.io/Solar-system-explorer/Deimos.html</loc>
   </url>
   <url>
+    <loc>https://enderwigin7.github.io/Solar-system-explorer/Phobos.html</loc>
+  </url>
+  <url>
     <loc>https://enderwigin7.github.io/Solar-system-explorer/Jupiter.html</loc>
+  </url>
+  <url>
+    <loc>https://enderwigin7.github.io/Solar-system-explorer/Saturn.html</loc>
+  </url>
+  <url>
+    <loc>https://enderwigin7.github.io/Solar-system-explorer/Uranus.html</loc>
+  </url>
+  <url>
+    <loc>https://enderwigin7.github.io/Solar-system-explorer/Neptune.html</loc>
+  </url>
+  <url>
+    <loc>https://enderwigin7.github.io/Solar-system-explorer/Pluto.html</loc>
   </url>
   <url>
     <loc>https://enderwigin7.github.io/Solar-system-explorer/Haumea.html</loc>
   </url>
   <url>
     <loc>https://enderwigin7.github.io/Solar-system-explorer/Eris.html</loc>
+  </url>
+  <url>
+    <loc>https://enderwigin7.github.io/Solar-system-explorer/The%20Sun.html</loc>
+  </url>
+  <url>
+    <loc>https://enderwigin7.github.io/Solar-system-explorer/The%20asteroid%20belt.html</loc>
+  </url>
+  <url>
+    <loc>https://enderwigin7.github.io/Solar-system-explorer/The%20kuiper%20belt.html</loc>
+  </url>
+  <url>
+    <loc>https://enderwigin7.github.io/Solar-system-explorer/Planet%20descriptions.html</loc>
   </url>
 </urlset>
